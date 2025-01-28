@@ -1,0 +1,209 @@
+# project1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img class="logo" src="photo/logo.png" alt="">
+            <ul>
+
+                <li><a href="">HOME</a></li>
+                <li><a href="#project">PROJECT</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#gallary">GALLARY</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+
+            </ul>
+            <div id="text-box">
+                <p>THIS IS A SINGLE PAGE</p>
+                <h1>WEBSITE</h1>
+                <h3>ALL THE THINGS YOU NEED</h3>
+            </div>
+        </nav>
+    </div>
+
+    <section id="project">
+        <h1 class="heading">PROJECT</h1>
+        <div class="row">
+            <div class="box">
+                <img src="photo/web.png" alt="">
+                <h1 class="heading">HTML/CSS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ipsa.</p>
+                <button class="btn">Start_Learning</button>
+            </div>
+            <div class="box">
+                <img src="photo/jsimage.png" alt="">
+                <h1 class="heading">JAVA SCRIPT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, deserunt.</p>
+                <button class="btn">Start_Learning</button>
+            </div>
+            <div class="box">
+                <img src="photo/picon.jpg" alt="">
+                <h1 class="heading">C/JAVA</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nobis!</p>
+                <button class="btn">Start_Learning</button>
+            </div>
+        </div>
+    </section>
+    <section id="price_list">
+        <h1 class="heading">PRICE TABLE</h1>
+        <div class="row_price">
+            <div class="box_price">
+                <h2 class="price">STANDARD</h2>
+                <h3 class="price-h3">FREE</h3>
+                <br><br>
+                <h4>crach course <br><br> 4 hour video <br><br> with ADS</h4>
+                <button class="btn">BUY</button>
+            </div>
+            <div class="box_price">
+                <h2 class="price">BUSINESS</h2>
+                <h3 class="price-h3">19$/Month</h3>
+                <br><br>
+                <h4>Begginer <br><br> 10 hour video <br><br> without ADS</h4>
+                <button class="btn">BUY</button>
+            </div>
+            <div class="box_price">
+                <h2 class="price">PRIMIUM</h2>
+                <h3 class="price-h3">20$/month</h3>
+                <br><br>
+                <h4>advance level <br><br> 20 hour video <br><br> without ADS</h4>
+                <button class="btn">BUY</button>
+                <p></p>
+            </div>
+        </div>
+
+    </section>
+    <section id="team">
+        <h1 class="heading">OUR TEAM</h1>
+        <div class="profiles">
+            <div class="profile">
+                <img class="profile-img" src="photo/team1.jpg" alt="">
+                <h2 class="user-name">JHON</h2>
+                <h5>creative director</h5>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, impedit.</h4>
+            </div>
+            <div class="profile">
+                <img class="profile-img" src="photo/team2.jpg" alt="">
+                <h2 class="user-name">William</h2>
+                <h5>Managing partner</h5>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, impedit.</h4>
+            </div>
+            <div class="profile">
+                <img class="profile-img" src="photo/team3.jpg" alt="">
+                <h2 class="user-name">Ben</h2>
+                <h5>Project Manager</h5>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, impedit.</h4>
+            </div>
+        </div>
+
+    </section>
+    <section id="gallary">
+        <h1 class="heading">GALLARY</h1>
+        <div class="full-img" id="fullImgBox">
+            <img src="photo/team1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="img-gallary">
+            <img src="photo/gallary1.jpg" onclick="openFullImg(this.src)">
+            <img src="photo/gallary2.jpg" onclick="openFullImg(this.src)">
+            <img src="photo/gallary3.jpg" onclick="openFullImg(this.src)">
+            <img src="photo/gallary4.jpg" onclick="openFullImg(this.src)">
+            <img src="photo/gallary5.jpg" onclick="openFullImg(this.src)">
+            <img src="photo/gallary6.jpg" onclick="openFullImg(this.src)">
+            <img src="photo/gallary7.jpg" onclick="openFullImg(this.src)">
+            <img src="photo/gallary8.jpg" onclick="openFullImg(this.src)">
+        </div>
+
+    </section>
+    <script src="task1.js"></script>
+
+    <section id="blog">
+        <h1 class="heading">BLOG</h1>
+        <div class="row-blog">
+            <div class="box-blog">
+                <img class="blog-photo" src="photo/blog1.jpg" alt="">
+                <h1 class="blog-heading">Learn...</h1>
+                <h2>19 jun,2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ipsa.</p>
+                <button class="btn">Read more.. </button>
+            </div>
+            <div class="box-blog">
+                <img class="blog-photo" src="photo/blog2.jpg" alt="">
+                <h1 class="blog-heading">Devlop...</h1>
+                <h2>28 jan,2025</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ipsa.</p>
+                <button class="btn">Read more.. </button>
+            </div>
+            <div class="box-blog">
+                <img class="blog-photo" src="photo/blog3.jpg" alt="">
+                <h1 class="blog-heading">Earn...</h1>
+                <h2>28 jan,2028</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ipsa.</p>
+                <button class="btn">Read more.. </button>
+            </div>
+    </section>
+    <section id="contact">
+        <h1 class="heading">CONTACT</h1>
+        <form action="" class="from">
+            <input type="text" name="name" class="input" required placeholder="enter your name.....">
+            <input type="text" name="email" class="input" placeholder="enter your email.....">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="enter your massage....."></textarea>
+            <input type="submit" value="SEND" id="send">
+
+        </form>
+
+    </section>
+    <footer class="footer">
+        <div class="contain">
+            <div class="row-foot">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li> <a href="#">about us</a> </li>
+                        <li> <a href="#">our servies</a> </li>
+                        <li> <a href="#">privacypolicy</a> </li>
+                        <li> <a href="#">rate us</a> </li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li> <a href="#">FAQ</a> </li>
+                        <li> <a href="#">returns</a> </li>
+                        <li> <a href="#">payment option</a> </li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-link">
+                        <ul>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="=task.js"></script>
+</body>
+
+</html>
